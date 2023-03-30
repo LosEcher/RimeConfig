@@ -1,0 +1,68 @@
+# squirrel.custom.yaml
+patch:
+  app_options:
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      no_inline: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+    com.nssurge.surge-mac:
+      ascii_mode: true
+    com.google.Chrome:
+      ascii_mode: true
+    org.mozilla.firefox:
+      ascii_mode: true
+    com.raycast.macos:
+      ascii_mode: true
+    com.xunyong.hapigo:
+      ascii_mode: true
+    app.elpass.macos:
+      ascii_mode: true
+  style:
+    color_scheme: ayaya
+    translucency: true # 背景半透明总开关，不需要关掉即可
+
+  preset_color_schemes:
+    ayaya:
+      name: "文文／Ayaya"
+      author: "Lufs <i@isteed.cc>"
+
+      alpha: 0.95 # 透明度
+      # horizontal: true # 水平排列
+      inline_preedit: true # 单行显示，false 双行显示
+      candidate_format: "%c\u2005%@" # 编号 %c 和候选词 %@ 前后的空间
+      corner_radius: 6.0 # 候选条圆角
+      hilited_corner_radius: 4.0
+      base_offset: -0.2
+      border_height: 1.0
+      border_width: 1.0
+      border_color_width: 0
+      line_spacing: 6
+
+      font_face: "PingFangSC" # 候选词字体
+      font_point: 16 # 候选字词大小
+      label_font_face: "PingFangSC" # 候选词编号字体
+      label_font_point: 14 # 候选编号大小
+      comment_font_face: "PingFangSC"
+      comment_font_point: 12
+
+      # 颜色
+      back_color: 0x252a2e # 候选条背景色，24位色值，16进制，ABGR顺序
+      border_color: 0x1E1F24
+      candidate_text_color: 0xE8E8E8 # 预选项文字颜色
+      comment_text_color: 0x9FFFFFFF # 拼音等提示文字颜色
+      label_color: 0x7C7C7C # 预选栏编号颜色
+      text_color: 0x3F000000 # 高亮选中词颜色
+      hilited_back_color: 0xD75A00              # 第一候选项背景背景色
+      hilited_candidate_back_color: 0xDA6203 # 候选文字背景色
+      hilited_candidate_text_color: 0xFFFFFF # 候选文字颜色
+      hilited_candidate_label_color: 0xFFE7D6 # 候选编号颜色
+      hilited_comment_text_color: 0x999999      # 注解文字高亮
+      hilited_text_color: 0xD8000000
